@@ -1,13 +1,15 @@
 ---
 title: "Node.js 多版本安装"
-date: 2019-04-24T22:37:44+08:00
+date: 2018-10-01T15:37:44+08:00
 description: "Node.js 的版本更新非常快，所有有时需要在多个版本之间切换，就需要安装多个版本的 Node.js."
 tags: ["nodejs","安装"]
 categories: ["技术"]
 ---
 
+> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)
 
-- Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine（Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境）。
+
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine（Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境）。
 - Node.js 跨平台，支持 Windows、 Linux、Mac,
 - 2018.10.8 Node.js 最新版本 10.11.0 
 - Node.js 的包管理器 npm，是全球最大的开源库生态系统。
