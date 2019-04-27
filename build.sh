@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-hugo -t even
+hugo -t even --minify

@@ -1,5 +1,5 @@
 ---
-title: "解决 React-Native 在 Mac 下运行报错 error Failed to build iOS project. We ran 'xcodebuild' command but it exited with error code 65. To debug build logs further, consider building your app with Xcode.app, by opening reactNative.xcodeproj"
+title: "解决 React-Native 在 Mac 下启动报 error code 65"
 date: 2019-04-21T16:55:06+08:00
 
 description: ""

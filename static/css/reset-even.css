@@ -1,10 +1,17 @@
 .icon-juejin {
-    background-image: url(/images/juejin.svg);
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
     width: 30px;
     height: 30px;
+    background-image: url(/images/juejin.svg);
+}
+
+
+
+.site-title {
+    font-size: 25px;
+    display: inline-block;
 }
 
 html .post .post-reward .qr-code .image {
@@ -13,4 +20,9 @@ html .post .post-reward .qr-code .image {
 
 html body {
     border-top: 0;
+}
+
+.label-style {
+    font-size: 30px;
+    color: #34495e;
 }

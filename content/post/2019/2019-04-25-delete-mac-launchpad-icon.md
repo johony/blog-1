@@ -6,8 +6,6 @@ tags: ["Gitter"]
 categories: ["Mac"]
 ---
 
-
-
 Mac 删除应用非常简单，将应用拖到回收站就删除了。或者进入应用程序文件夹，选中程序，**command + delete** 就删除了应用，这也是删除文件的快捷键。
 
 但是，安装 **Gitter** 后，删除了应用程序，图标一直删除不了。
@@ -39,3 +37,4 @@ sqlite3 $(find /private/var/folders \( -name com.apple.dock.launchpad -a -user $
 1. [https://apple.stackexchange.com/questions/144756/how-to-remove-an-icon-from-launchpad-that-does-not-appear-in-the-finder](https://apple.stackexchange.com/questions/144756/how-to-remove-an-icon-from-launchpad-that-does-not-appear-in-the-finder)
 
 
+> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)
