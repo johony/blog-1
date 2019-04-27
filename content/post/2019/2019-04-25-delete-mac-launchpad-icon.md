@@ -2,11 +2,11 @@
 title: "解决 Mac launchpad 启动台 Gitter 图标无法删除的问题"
 date: 2019-04-25T21:12:56+08:00
 description: ""
-tags: ["mac"]
-categories: ["技术"]
+tags: ["Gitter"]
+categories: ["Mac"]
 ---
 
-> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)
+
 
 Mac 删除应用非常简单，将应用拖到回收站就删除了。或者进入应用程序文件夹，选中程序，**command + delete** 就删除了应用，这也是删除文件的快捷键。
 
@@ -23,6 +23,8 @@ Mac 删除应用非常简单，将应用拖到回收站就删除了。或者进�
 ```bash
 defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock
 ```
+
+## 解决方法
 
 最后找到如下命令，成功删除了 **Gitter**   图标。
 

@@ -6,7 +6,7 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
-enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -21,7 +21,7 @@ googleAnalytics = "UA-138883536-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = ""
+  name = "Steve Xu"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -29,27 +29,27 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "首页"
+  name = "Home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "归档"
+  name = "Archives"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "分类"
-  weight = 40
+  name = "Categories"
+  weight = 30
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "标签"
-  weight = 30
+  name = "Tags"
+  weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "关于我"
+  name = "About"
   weight = 50
   identifier = "about"
   url = "/about/"
@@ -64,7 +64,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   gitRepo = "https://github.com/nusr/blog"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Steve Xu"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["blog", "github pages" ,"Hugo", "theme","even"]
   description = "Steve Xu's Blog"
 
@@ -95,9 +95,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   mathjaxEnableAutoNumber = false                                                       # 是否使用公式自动编号
   mathjaxUseLocalFiles = false  # You should install mathjax in `yout-site/static/lib/mathjax`
 
-  postMetaInFooter = false   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
+  postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
   linkToMarkDown = false    # Only effective when hugo will output .md files.           # 链接到markdown原始文件（仅当允许hugo生成markdown文件时有效）
-  contentCopyright = ''     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+  contentCopyright = '<a target="_blank" rel="license noopener" href="https://github.com/nusr/blog/blob/master/LICENSE">MIT</a>'     # e.g. '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
@@ -111,7 +111,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = []
+  customCSS = ["reset-even.css"]
   customJS = []
 
   uglyURLs = false          # please keep same with uglyurls setting
@@ -132,8 +132,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # 在文章开头显示提示信息，提醒读者文章内容可能过时。
   [params.outdatedInfoWarning]
     enable = true
-    hint = 180               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
-    warn = 385             # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
+    hint = 365               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
+    warn = 730             # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = ""              # Your GitHub ID
@@ -156,7 +156,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     options = ""            # default: "{theme: 'simple'}"
 
   [params.busuanzi]         # count web traffic by busuanzi                             # 是否使用不蒜子统计站点访问量
-    enable = false
+    enable = true
     siteUV = true
     sitePV = true
     pagePV = true
@@ -167,10 +167,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     alipay = "/images/wechat.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:stevexugc@gmail.com"
+    g-email = "mailto:stevexugc@gmail.com"
     g-github = "https://github.com/nusr"
-    #i-zhihu = "http://localhost:1313"
-    #l-tumblr = "http://localhost:1313"
+    g-juejin = "https://juejin.im/user/59aeb829f265da249960595a"
+    g-cnblogs = "http://www.cnblogs.com/stevexu"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]

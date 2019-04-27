@@ -1,0 +1,16 @@
+.icon-juejin {
+    background-image: url(/images/juejin.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+html .post .post-reward .qr-code .image {
+    width: unset;
+}
+
+html body {
+    border-top: 0;
+}

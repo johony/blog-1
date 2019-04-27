@@ -2,11 +2,11 @@
 title: "Node.js 种子下载器"
 date: 2018-10-11T12:58:44+08:00
 description: ""
-tags: ["爬虫","nodejs"]
+tags: ["spider","Node.js"]
 categories: ["技术"]
 ---
 
-> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)
+
 
 庆祝 2018 国庆，制作了一个 `Node.js` 的种子下载器。爬取页面，根据页面的链接，破解另外一个网站，下载种子文件。项目比较简单，爬取页面没有使用任何爬虫框架。[项目源码](https://github.com/nusr/FBIWarning)
 

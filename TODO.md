@@ -1,3 +1,3 @@
 # TODO
-1. 剩余博客迁移
+1. footer social-link 完善
 1. fix even bug

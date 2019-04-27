@@ -6,7 +6,7 @@ tags: ["kindle"]
 categories: ["阅读"]
 ---
 
-> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)
+
 
 kindle 分 kindle 电子阅读器，pc 版，app 版，下文主要介绍 Amazon 设计和销售的电子书阅读器。
 
