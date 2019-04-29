@@ -1,3 +1,3 @@
-# 博客文件存档
+# Blog Archives
 
-博客地址: [https://nusr.github.io/](https://nusr.github.io/)
+[Visit My Blog](https://nusr.github.io/)

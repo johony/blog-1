@@ -8,7 +8,7 @@ set -e
 rm -rf public
 
 # 打包。even 是主题
-hugo -t even # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo -t even --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # 进入打包文件夹
 cd public
@@ -25,9 +25,9 @@ if [ $# -eq 1 ]
 fi
 git commit -m "$msg"
 
-# 推送到githu  
+# 推送到githu
 # nusr.github.io 只能使用 master分支
-git push -f git@github.com:nusr/nusr.github.io.git master
+git push  git@github.com:nusr/nusr.github.io.git master
 
 # 回到原文件夹
 cd ..
