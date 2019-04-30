@@ -8,13 +8,14 @@ set -e
 rm -rf public
 
 # 打包。even 是主题
-hugo -t even --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo -t even # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # 进入打包文件夹
 cd public
 
+# 添加 readme
+echo '# Store Hugo HTML files\n\nBlog Markdown File [https://github.com/nusr/blog](https://github.com/nusr/blog)' > README.md
 # Add changes to git.
-
 git init
 git add -A
 
@@ -25,9 +26,10 @@ if [ $# -eq 1 ]
 fi
 git commit -m "$msg"
 
-# 推送到githu
+# 推送到 github pages
 # nusr.github.io 只能使用 master分支
-git push  git@github.com:nusr/nusr.github.io.git master
+# -f 强制推送
+git push -f git@github.com:nusr/nusr.github.io.git master
 
 # 回到原文件夹
 cd ..

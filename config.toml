@@ -6,7 +6,7 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
-enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
+enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
@@ -29,27 +29,27 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "首页"
+  name = "Home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "档案"
+  name = "Archives"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "分类"
+  name = "Categories"
   weight = 30
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "标签"
+  name = "Tags"
   weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "关于我"
+  name = "About"
   weight = 50
   identifier = "about"
   url = "/about/"
@@ -169,8 +169,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     g-email = "mailto:stevexugc@gmail.com"
     g-github = "https://github.com/nusr"
-    # g-juejin = "https://juejin.im/user/59aeb829f265da249960595a"
-    # g-cnblogs = "http://www.cnblogs.com/stevexu"
+    g-juejin = "https://juejin.im/user/59aeb829f265da249960595a"
+    g-cnblogs = "http://www.cnblogs.com/stevexu"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
@@ -181,18 +181,18 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
-[mediaTypes]
-  [mediaTypes."text/plain"]
-    suffixes = ["md"]
-
-[outputFormats.MarkDown]
-  mediaType = "text/plain"
-  isPlainText = true
-  isHTML = false
-
-[outputs]
-  home = ["HTML", "RSS"]
-  page = ["HTML", "MarkDown"]
-  section = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+#[mediaTypes]
+#  [mediaTypes."text/plain"]
+#    suffixes = ["md"]
+#
+#[outputFormats.MarkDown]
+#  mediaType = "text/plain"
+#  isPlainText = true
+#  isHTML = false
+#
+#[outputs]
+#  home = ["HTML", "RSS"]
+#  page = ["HTML", "MarkDown"]
+#  section = ["HTML", "RSS"]
+#  taxonomy = ["HTML", "RSS"]
+#  taxonomyTerm = ["HTML"]

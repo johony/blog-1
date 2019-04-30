@@ -12,9 +12,6 @@ categories: []
 ## 相关链接
 
 1. [阮一峰](http://www.ruanyifeng.com/blog/)
-1. [张鑫旭](https://www.zhangxinxu.com/wordpress/)
-1. [掘金](https://juejin.im/user/59aeb829f265da249960595a)
-1. [博客园](http://www.cnblogs.com/stevexu)
 1. [MDN](https://developer.mozilla.org)
 
 ## 资源链接

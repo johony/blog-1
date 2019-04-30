@@ -1,13 +1,33 @@
-.icon-juejin {
-    background-size: cover;
+.icon-juejin, .icon-cnblogs {
+    background-size: 100%;
     background-repeat: no-repeat;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(/images/juejin.svg);
 }
 
+.icon-juejin {
+    background-image: url(/images/juejin.svg);
+    width: 35px;
+    height: 35px;
+}
 
+.icon-cnblogs {
+    background-image: url(/images/cnblogs.svg);
+    width: 30px;
+    height: 30px;
+}
+
+body .icon-email:before {
+    content: "\e605";
+}
+
+body .icon-github:before {
+    content: "\e606";
+}
+
+body .footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .site-title {
     font-size: 25px;
