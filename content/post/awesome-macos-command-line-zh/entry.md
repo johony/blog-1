@@ -23,7 +23,7 @@ awesome-macos-command-line 收集了许多终端命令。
 
 ## 目录
 
-- [主要内容](readme)
+- [主要内容](/post/awesome-macos-command-line-zh/README)
 - [函数](/post/awesome-macos-command-line-zh/functions)
 - [自启动服务](/post/awesome-macos-command-line-zh/launchagents)
 - [代码片段](/post/awesome-macos-command-line-zh/snippets)

@@ -2,6 +2,7 @@
 title: "Awesome Mac OS Command Line"
 date: 2019-05-01T14:25:24+08:00
 description: ""
+hiddenFromHomePage: true
 tags: ["awesome"]
 categories: ["mac"]
 ---
@@ -21,6 +22,9 @@ categories: ["mac"]
 中文 | [English](https://github.com/herrbischoff/awesome-macos-command-line)
 
 [Github 地址](https://github.com/nusr/awesome-macos-command-line-zh)
+
+<!--more-->
+
 
 ## 外形
 

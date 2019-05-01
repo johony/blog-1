@@ -3,12 +3,16 @@
 title: "自启动服务"
 date: 2019-05-01T14:25:24+08:00
 description: ""
+hiddenFromHomePage: true
 tags: ["awesome"]
 categories: ["mac"]
 ---
 
 > 各种有用的自启动服务例子。 [Awesome OS X Command Line](https://github.com/nusr/awesome-macos-command-line-zh) 的一部分
 ``
+
+<!--more-->
+
 
 ## 基本例子
 
