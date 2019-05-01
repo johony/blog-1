@@ -3,8 +3,8 @@ title: " Mac OS 版本信息"
 date: 2019-05-01T18:24:43+08:00
 description: ""
 hiddenFromHomePage: true
-tags: ["awesome"]
-categories: ["mac"]
+tags: ["Awesome"]
+categories: ["Mac"]
 ---
 
 | 版本                       | 名称               | 发布日期           | 最新版本                              |

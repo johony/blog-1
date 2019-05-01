@@ -3,7 +3,7 @@ title: "解决 mac 10.14.4 无法 sublime text 3207 安装 Package Control,以�
 date: 2019-04-13T14:58:13+08:00
 
 description: ""
-tags: ["sublime"]
+tags: ["Sublime"]
 categories: ["Mac"]
 ---
 

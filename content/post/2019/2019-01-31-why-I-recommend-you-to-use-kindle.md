@@ -2,7 +2,7 @@
 title: "我为什么推荐你使用kindle"
 date: 2019-01-31T15:30:21+08:00
 description: ""
-tags: ["kindle"]
+tags: ["Kindle"]
 categories: ["阅读"]
 ---
 

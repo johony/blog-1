@@ -3,8 +3,8 @@
 title: "Awesome Mac OS Command Line 中文翻译"
 date: 2019-05-01T14:25:24+08:00
 description: ""
-tags: ["awesome"]
-categories: ["mac"]
+tags: ["Awesome"]
+categories: ["Mac"]
 ---
 
 [awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 的中文翻译，翻译不妥的地方，欢迎提 issue 或者 pull request 。

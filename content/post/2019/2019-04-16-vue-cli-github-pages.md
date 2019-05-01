@@ -3,7 +3,7 @@ title: "vue cli 3.x 项目部署到 github pages"
 date: 2019-04-16T21:20:39+08:00
 
 description: ""
-tags: ["vue", "GitHub-pages"]
+tags: ["Vue", "GitHub Pages"]
 categories: ["技术"]
 ---
 

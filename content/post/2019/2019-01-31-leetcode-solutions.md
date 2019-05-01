@@ -3,7 +3,7 @@ title: "Leetcode 题解"
 date: 2019-01-31T17:12:18+08:00
 
 description: ""
-tags: ["leetcode", "algorithm"]
+tags: ["Leetcode", "Algorithm"]
 categories: ["技术"]
 ---
 

@@ -3,8 +3,8 @@ title: "代码片段"
 date: 2019-05-01T14:25:24+08:00
 description: ""
 hiddenFromHomePage: true
-tags: ["awesome"]
-categories: ["mac"]
+tags: ["Awesome"]
+categories: ["Mac"]
 ---
 
 > 各种有用的 Bash 风格命令，可随时复制、粘贴。

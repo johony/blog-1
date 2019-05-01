@@ -3,7 +3,7 @@ title: " @vue/cli 3.0 使用 svg-sprite-loader 加载本地 SVG 文件"
 date: 2019-04-03T16:34:59+08:00
 
 description: ""
-tags: ["vue", "svg-symbol"]
+tags: ["Vue", "Svg-Symbol"]
 categories: ["技术"]
 ---
 

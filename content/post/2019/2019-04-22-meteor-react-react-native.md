@@ -3,7 +3,7 @@ title: "React 与 React-Native 使用同一个 meteor 后台"
 date: 2019-04-22T09:07:06+08:00
 
 description: ""
-tags: ["meteor", "react", "react-native"]
+tags: ["Meteor", "React", "React-Native"]
 categories: ["技术"]
 ---
 

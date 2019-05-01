@@ -3,7 +3,7 @@ title: "解决 React-Native 在 Mac 下启动报 error code 65"
 date: 2019-04-21T16:55:06+08:00
 
 description: ""
-tags: ["Mac", "react-native"]
+tags: ["React-Native"]
 categories: ["技术"]
 ---
 

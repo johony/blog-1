@@ -1,7 +1,7 @@
 baseURL = "https://nusr.github.io/"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "Steve Xu'S Blog"
+title = "Brave New World"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -22,7 +22,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 [blackfriday]
   smartypants = false
-  
+
 [author]                  # essential                     # 必需
   name = "Steve Xu"
 

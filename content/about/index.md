@@ -3,7 +3,7 @@ title: "About"
 date: 2019-04-24T22:25:24+08:00
 description: "关于我"
 tags: []
-categories: []
+categories: ["生活"]
 ---
 
 热爱开源的前端工程师，Kindle 及 RSS 重度用户。

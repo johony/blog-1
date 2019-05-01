@@ -3,7 +3,7 @@ title: "一行命令更新所有 npm 依赖包"
 date: 2019-04-21T12:55:27+08:00
 
 description: ""
-tags: ["npm"]
+tags: ["Npm"]
 categories: ["技术"]
 ---
 
