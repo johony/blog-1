@@ -2,7 +2,7 @@
 title: "Hugo + Github Pages 搭建个人博客"
 date: 2019-04-26T13:06:49+08:00
 description: ""
-tags: ["Hugo","Blog"]
+tags: ["Hugo", "Blog"]
 categories: ["技术"]
 ---
 
@@ -17,7 +17,6 @@ Hugo is a fast and modern static site generator written in Go, and designed to m
 
 <!--more-->
 
-
 ## 安装 Hugo
 
 Hugo 搭建个人博客前，需要先安装 Git 和 Go 语言开发环境。
@@ -29,7 +28,7 @@ Hugo 搭建个人博客前，需要先安装 Git 和 Go 语言开发环境。
 既可以使用 HomeBrew 安装，也可以在 [https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases) 下载二进制包安装
 
 ```bash
-brew install hugo 
+brew install hugo
 ```
 
 ### Windows 安装 Hugo
@@ -44,7 +43,6 @@ hugo version
 
 输出版本信息表示安装成功，更多安装方式查看 [https://gohugo.io/getting-started/installing](https://gohugo.io/getting-started/installing)
 
-
 ## 建立 Hugo 项目
 
 一个 Hugo 项目就是一个站点，创建命令如下：
@@ -54,7 +52,6 @@ hugo new site [project-name]
 ```
 
 例如我的站点名称是 **blog**,创建命令如下：
-
 
 ```bash
 hugo new site blog
@@ -82,7 +79,6 @@ Hugo 有主题市场 [https://themes.gohugo.io/](https://themes.gohugo.io/) ，�
 
 1. [https://github.com/olOwOlo/hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even)
 1. [https://github.com/yoshiharuyamashita/blackburn](https://github.com/yoshiharuyamashita/blackburn)
-
 
 第一个更好看、功能更加强大，选择了第一个。进入根目录，克隆主题文件就是安装主题。
 
@@ -160,7 +156,7 @@ hugo -t even
 
 打包之后就是纯 HTML 文件，理论上所有支持部署静态页面的网站都是支持的。
 
-我的部署命令如下，更多部署方式查看 [https://gohugo.io/hosting-and-deployment/](https://gohugo.io/hosting-and-deployment/) 
+我的部署命令如下，更多部署方式查看 [https://gohugo.io/hosting-and-deployment/](https://gohugo.io/hosting-and-deployment/)
 
 ```bash
 #!/bin/bash
@@ -189,7 +185,7 @@ if [ $# -eq 1 ]
 fi
 git commit -m "$msg"
 
-# 推送到githu  
+# 推送到githu
 # nusr.github.io 只能使用 master分支
 git push -f git@github.com:nusr/nusr.github.io.git master
 

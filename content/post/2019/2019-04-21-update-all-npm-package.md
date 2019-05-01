@@ -7,9 +7,6 @@ tags: ["npm"]
 categories: ["技术"]
 ---
 
-
-
-
 **npm** 包的更新速度很快，为了将项目或者全局依赖更新到最新版本。传统的做法是一个一个更新，比如更新 **react** 到最新版本，命令如下：
 
 ```bash
@@ -103,12 +100,12 @@ scape
 
 更新全局依赖同上
 
-|说明|yarn|npm-check|
-|-|-|-|
-|更新项目依赖，没有交互|yarn upgrade  --latest |npm-check -y|
-|更新项目依赖，有交互|yarn upgrade-interactive  --latest |npm-check -u|
-|更新全局依赖，没有交互|yarn global upgrade --latest |npm-check -g  -y |
-|更新全局依赖，有交互|yarn global upgrade-interactive  --latest |npm-check -g -u|
+| 说明                   | yarn                                     | npm-check       |
+| ---------------------- | ---------------------------------------- | --------------- |
+| 更新项目依赖，没有交互 | yarn upgrade --latest                    | npm-check -y    |
+| 更新项目依赖，有交互   | yarn upgrade-interactive --latest        | npm-check -u    |
+| 更新全局依赖，没有交互 | yarn global upgrade --latest             | npm-check -g -y |
+| 更新全局依赖，有交互   | yarn global upgrade-interactive --latest | npm-check -g -u |
 
 ## 检测原理
 
@@ -133,7 +130,7 @@ scape
 ## 安装 nrm
 
 ```bash
-npm i -g nrm 
+npm i -g nrm
 ```
 
 ## 查看下载镜像源
@@ -141,7 +138,9 @@ npm i -g nrm
 ```bash
 nrm ls
 ```
+
 输出如下
+
 ```
   npm ---- https://registry.npmjs.org/
   cnpm --- http://r.cnpmjs.org/

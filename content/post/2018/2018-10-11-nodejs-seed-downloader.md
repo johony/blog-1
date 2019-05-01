@@ -2,11 +2,9 @@
 title: "Node.js 种子下载器"
 date: 2018-10-11T12:58:44+08:00
 description: ""
-tags: ["spider","Node.js"]
+tags: ["spider", "Node.js"]
 categories: ["技术"]
 ---
-
-
 
 庆祝 2018 国庆，制作了一个 `Node.js` 的种子下载器。爬取页面，根据页面的链接，破解另外一个网站，下载种子文件。项目比较简单，爬取页面没有使用任何爬虫框架。[项目源码](https://github.com/nusr/FBIWarning)
 
@@ -45,14 +43,14 @@ categories: ["技术"]
 目标网站的页面编码是 `gbk` ，而 `request` 依赖包的默认编码是 `UTF-8`,使用默认编码解码方式，会导致页面的中文变成乱码。所以得到返回数据前，去掉默认编码，就是设置编码为 `encoding: null`,然后使用 `iconv-lite` 使用 `gbk` 方式解码，这样就可以解决中文编码为乱码的问题，代码如下：
 
 ```js
-const request = require("request")
+const request = require("request");
 // 解析 dom
-const cheerio = require("cheerio")
+const cheerio = require("cheerio");
 // 中文编码
-const iconv = require("iconv-lite")
+const iconv = require("iconv-lite");
 // 代理
-const Agent = require("socks5-http-client/lib/Agent")
-const COMMON_CONFIG = require("./config")
+const Agent = require("socks5-http-client/lib/Agent");
+const COMMON_CONFIG = require("./config");
 /**
  * 请求页面
  * @param {String} requestUrl 请求页面
@@ -61,7 +59,7 @@ function requestPage(requestUrl) {
   try {
     return new Promise((resolve, reject) => {
       if (!requestUrl) {
-        resolve(false)
+        resolve(false);
       }
       request.get(
         {
@@ -82,18 +80,18 @@ function requestPage(requestUrl) {
           // 防止解析报错
           try {
             // 统一解决中文乱码的问题
-            let content = iconv.decode(body, "gbk")
-            let $ = cheerio.load(content)
-            resolve($, err, response, body, content)
+            let content = iconv.decode(body, "gbk");
+            let $ = cheerio.load(content);
+            resolve($, err, response, body, content);
           } catch (error) {
-            resolve(null)
+            resolve(null);
           }
         }
-      )
-    })
+      );
+    });
   } catch (error) {
     //如果连续发出多个请求，即使某个请求失败，也不影响后面的其他请求
-    Promise.resolve(null)
+    Promise.resolve(null);
   }
 }
 ```
@@ -105,8 +103,8 @@ function requestPage(requestUrl) {
 ```js
 async function innerRecursion() {
   for (let i = 1; i <= 100; i++) {
-    let requestUrl = "http://www.baidu.com?page=" + i // 事例网站，非爬取网站
-    let result = await this.requestPage(url)
+    let requestUrl = "http://www.baidu.com?page=" + i; // 事例网站，非爬取网站
+    let result = await this.requestPage(url);
   }
 }
 ```
@@ -115,20 +113,20 @@ async function innerRecursion() {
 
 ```js
 function innerRecursion() {
-  let requestUrls = []
+  let requestUrls = [];
   for (let i = 1; i <= 100; i++) {
-    let requestUrl = "http://www.baidu.com?page=" + i // 事例网站，非爬取网站
-    requestUrls.push(requestUrl)
+    let requestUrl = "http://www.baidu.com?page=" + i; // 事例网站，非爬取网站
+    requestUrls.push(requestUrl);
   }
-  let promises = requestUrls.map(url => this.requestPage(url))
+  let promises = requestUrls.map(url => this.requestPage(url));
   Promise.all(promises)
     .then(results => {
       // results 是一个数组，对应上面每个请求的结果
     })
     .catch(error => {
       // 捕获请求中可能发生的错误
-      console.log(error)
-    })
+      console.log(error);
+    });
 }
 ```
 
@@ -146,7 +144,7 @@ function downloadFile(url, filePath) {
   // try...catch 防止一个请求出错，导致程序终止 种子的下载相同
   try {
     if (!url || !filePath) {
-      return false
+      return false;
     }
     request
       .get({
@@ -163,9 +161,9 @@ function downloadFile(url, filePath) {
           }
         }
       })
-      .pipe(fs.createWriteStream(filePath))
+      .pipe(fs.createWriteStream(filePath));
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }
 ```
@@ -183,9 +181,9 @@ function downloadFile(url, filePath) {
 function downloadTorrent(childDir, downloadUrl) {
   try {
     // 解析出链接的 code 值
-    let code = querystring.parse(downloadUrl.split("?").pop()).ref
+    let code = querystring.parse(downloadUrl.split("?").pop()).ref;
     if (!code || !childDir) {
-      return false
+      return false;
     }
     // 发出 post 请求，然后接受文件即可
     request
@@ -204,9 +202,9 @@ function downloadTorrent(childDir, downloadUrl) {
           code
         }
       })
-      .pipe(fs.createWriteStream(childDir + "/" + code + ".torrent"))
+      .pipe(fs.createWriteStream(childDir + "/" + code + ".torrent"));
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }
 ```

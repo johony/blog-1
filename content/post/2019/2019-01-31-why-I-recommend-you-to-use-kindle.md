@@ -6,11 +6,9 @@ tags: ["kindle"]
 categories: ["阅读"]
 ---
 
-
-
 kindle 分 kindle 电子阅读器，pc 版，app 版，下文主要介绍 Amazon 设计和销售的电子书阅读器。
 
-## 使用 kindle 有哪些优点 
+## 使用 kindle 有哪些优点
 
 1. 搬家不用搬纸书
 2. 随时可以切换书本看
@@ -28,9 +26,7 @@ kindle 分 kindle 电子阅读器，pc 版，app 版，下文主要介绍 Amazon
 1. 只能用来阅读，不能做其他的事
 2. kindle 使用的是墨水屏，彩色不能显示
 
-
-
-## 如何挑选 kindle 
+## 如何挑选 kindle
 
 从亚马逊盗来的各 kindle 的对比，强烈推荐 **Kindle Paperwhite** (简称 kpw,最新 kpw4)。
 
@@ -42,11 +38,8 @@ kpw4 的存储空间更大，我买的 kpw3 ,只有 4G 的存储空间，每次�
 
 亚马逊和天猫的评论中，发现 **Kindle Oasis** 的续航能力只有一两天。
 
-
-
 ![kindle](https://img2018.cnblogs.com/blog/1187660/201901/1187660-20190131124844996-734654050.png)
 [图片来源](https://www.amazon.cn/dp/B07746N2J9/ref=sr_1_1?ie=UTF8&qid=1548909524&sr=8-1&keywords=kindle)
-
 
 ## 如何寻找自己想看的书
 
@@ -72,7 +65,7 @@ kpw4 的存储空间更大，我买的 kpw3 ,只有 4G 的存储空间，每次�
 
 ### 4. 免费漫画推送
 
-[https://vol.moe/](https://vol.moe/),每月免费三个G的漫画推送或下载，几乎市面上的大多漫画都有。
+[https://vol.moe/](https://vol.moe/),每月免费三个 G 的漫画推送或下载，几乎市面上的大多漫画都有。
 
 虽然大多是繁体字，但是与简体非常接近。
 
@@ -96,15 +89,14 @@ Kindle Format 8 (AZW3)，Kindle (AZW)，TXT，PDF，MOBI，PRC原格式，HTML�
 
 推送支持的文件格式如下：
 
-
 ```
 Kindle个人文档服务目前只能转换并发送以下类型的文档：
-Microsoft Word (.doc, .docx) 
-RTF文件(.rtf) 
+Microsoft Word (.doc, .docx)
+RTF文件(.rtf)
 HTML(.htm, .html)
-TXT文件(.txt) 
+TXT文件(.txt)
 Zip, x-zip压缩文件
-Mobi格式电子书 
+Mobi格式电子书
 
 JPEG (.jpg), GIF (.gif), Bitmap (.bmp) 和 PNG (.png) 格式的图片。
 Adobe PDF (.pdf)文档可维持原文件格式，发送至您的Kindle。
@@ -116,14 +108,14 @@ Adobe PDF (.pdf)文档可转换为Kindle格式发送，目前处于试用阶段�
 
 ## 如何使用邮件推送
 
-使用推送功能要有亚马逊账号，进入 [amazon](www.amazon.cn) 官网，依次点击 **我的账户 -> 内容和设备 -> 设置  -> 个人文档设置**。
+使用推送功能要有亚马逊账号，进入 [amazon](www.amazon.cn) 官网，依次点击 **我的账户 -> 内容和设备 -> 设置 -> 个人文档设置**。
 在**已认可的发件人电子邮箱列表**中，添加自己的 QQ 邮箱，然后在 QQ 邮箱添加附件，发送到**8618062549637@kindle.cn**，每个账户的地址都不一样，根据自己的账户显示填写。然后 kindle 里面就会显示自己推送的书籍。如果想转换 pdf 为 kindle 格式，邮件主题可以填写成 **convert**,否则为空就行。
 
 ![个人文档设置](https://img2018.cnblogs.com/blog/1187660/201901/1187660-20190131134914015-2078845418.png)
 
 ## 如何使用 kindle 阅读英文书籍
 
-这个必须单独说明，之前阅读纸质的英文书 *Pointers in C* 和 *Tess of the D’Urbervilles*, 查单词超级麻烦，因为是图书馆的书，做标注也麻烦，后来用了 kindle,完美解决了阅读英文书的痛点。
+这个必须单独说明，之前阅读纸质的英文书 _Pointers in C_ 和 _Tess of the D’Urbervilles_, 查单词超级麻烦，因为是图书馆的书，做标注也麻烦，后来用了 kindle,完美解决了阅读英文书的痛点。
 
 技术类的英文书，阅读起来很轻松，作者没用复杂的单词，国内的技术书籍翻译，看不下去。文学类书籍，有个叫蓝思值的难度标准，初读全英文书
 ，不要读超过一千的。
@@ -132,9 +124,7 @@ Adobe PDF (.pdf)文档可转换为Kindle格式发送，目前处于试用阶段�
 
 kindle 也有生词本，查过的单词可以自动加入生词本。如果你喜欢 Anki 背单词，[可以看这个](http://kmate.me/2017/02/21/anki-kindlemate-kindle-cn/)。
 
-
 ## kindle 常用的辅助软件
-
 
 - Gitbook 可以将多个 markdown 文件转换为 mobi
 - kindle mate - 导出 kindle 中的标注和笔记
@@ -153,7 +143,6 @@ kindle 也有生词本，查过的单词可以自动加入生词本。如果你�
 - Kindle Kids’ Book Creator – 亚马逊官方儿童图书工具
 - Kindle Plugin for Adobe InDesign – 亚马逊官方插件
 - KindleUnpack – 拆解 kindle 电子书文件的利器
-
 
 ## 参考
 

@@ -3,12 +3,9 @@ title: "React 与 React-Native 使用同一个 meteor 后台"
 date: 2019-04-22T09:07:06+08:00
 
 description: ""
-tags: ["meteor","react","react-native"]
+tags: ["meteor", "react", "react-native"]
 categories: ["技术"]
 ---
-
-
-
 
 [meteor](https://www.meteor.com/) 可以快速构建 pc,移动端，桌面端应用。
 
@@ -41,7 +38,7 @@ curl https://install.meteor.com/ | sh
 
 ### 验证安装
 
-命令行输入 
+命令行输入
 
 ```bash
 meteor --version
@@ -77,9 +74,9 @@ brew install mongod
 
 react,react-native 使用同一个 meteor 后台，所以 meteor 后台要与前端应用分开编写。
 
-这就涉及到 meteor 中后台与前端的数据交互,meteor 中定义了一个 **[DDP协议](https://github.com/meteor/meteor/blob/devel/packages/ddp/DDP.md)**。
+这就涉及到 meteor 中后台与前端的数据交互,meteor 中定义了一个 **[DDP 协议](https://github.com/meteor/meteor/blob/devel/packages/ddp/DDP.md)**。
 
-DDP协议定义了 meteor 后台发布数据，客户端订阅数据的操作。
+DDP 协议定义了 meteor 后台发布数据，客户端订阅数据的操作。
 
 本应用使用已经编写好了的 DDP 协议库，地址如下： [https://github.com/mondora/ddp.js](https://github.com/mondora/ddp.js)。
 
@@ -125,72 +122,72 @@ MONGO_URL=mongodb://username:password@localhost:27017/[database-name]?authSource
 ## 编写 meteor 后台
 
 ```js
-import {Meteor} from 'meteor/meteor'; 
-// mongodb 的 todo collection 
-const Todo = new Meteor.Collection('todo');
+import { Meteor } from "meteor/meteor";
+// mongodb 的 todo collection
+const Todo = new Meteor.Collection("todo");
 // 发布数据，前端就可以调用
-Meteor.publish('todo', () => {
-    return Todo.find();
+Meteor.publish("todo", () => {
+  return Todo.find();
 });
 /**
  * 定义前端调用的方法
  */
 Meteor.methods({
-    // 查找一条数据
-    getTodo(id) {
-        return Todo.findOne(id);
-    },
-    // 查找所有数据
-    getAllTodo() {
-        return Todo.find().fetch();
-    },
-    // 新增
-    addTodo(item) {
-        return Todo.insert(item);
-    },
-    // 删除
-    removeTodo(id) {
-        return Todo.remove({_id: id});
-    },
-    // 编辑
-    editTodo(item) {
-        return Todo.update({_id: item.id}, {$set: item});
-    },
-    /**
-     *
-     * @param {number 当前页面 从 1 开始} currentPage
-     * @param {number 单次请求总条数} pageSize
-     */
-    getPageTodo(currentPage = 1, pageSize = 10) {
-        if (page < 1) {
-            return null;
-        }
-        // meteor 对 mongodb 的操作方法做了封装
-        // 更多操作请查看 meteor 官方文档
-        const total = Todo.find().count();
-        const list = Todo.find(
-            {},
-            {
-                skip: (currentPage - 1) * pageSize,
-                limit: pageSize,
-            }
-        ).fetch();
-        return {total, data: list};
-    },
+  // 查找一条数据
+  getTodo(id) {
+    return Todo.findOne(id);
+  },
+  // 查找所有数据
+  getAllTodo() {
+    return Todo.find().fetch();
+  },
+  // 新增
+  addTodo(item) {
+    return Todo.insert(item);
+  },
+  // 删除
+  removeTodo(id) {
+    return Todo.remove({ _id: id });
+  },
+  // 编辑
+  editTodo(item) {
+    return Todo.update({ _id: item.id }, { $set: item });
+  },
+  /**
+   *
+   * @param {number 当前页面 从 1 开始} currentPage
+   * @param {number 单次请求总条数} pageSize
+   */
+  getPageTodo(currentPage = 1, pageSize = 10) {
+    if (page < 1) {
+      return null;
+    }
+    // meteor 对 mongodb 的操作方法做了封装
+    // 更多操作请查看 meteor 官方文档
+    const total = Todo.find().count();
+    const list = Todo.find(
+      {},
+      {
+        skip: (currentPage - 1) * pageSize,
+        limit: pageSize
+      }
+    ).fetch();
+    return { total, data: list };
+  }
 });
 // 定义对 mongodb 的操作权限
 // 若没有定义，则是允许所有增删改查操作
 Todo.deny({
-    // 是否允许 mongodb 的新增操作， 返回 true 表示允许，否则不允许
-    insert() {
-        return true;
-    },
-    update() {
-        return true;
-    },
-    remove() {
-        return true;
-    },
+  // 是否允许 mongodb 的新增操作， 返回 true 表示允许，否则不允许
+  insert() {
+    return true;
+  },
+  update() {
+    return true;
+  },
+  remove() {
+    return true;
+  }
 });
 
 export default Todo;
@@ -204,36 +201,36 @@ export default Todo;
 
 ```js
 // meteor.js
-import React, {Component} from 'react';
-import DDP from 'ddp.js';
+import React, { Component } from "react";
+import DDP from "ddp.js";
 /**
  * meteor 连接选项
  */
 const meteorOptions = {
-  endpoint: 'ws://192.168.31.121:9090/websocket',// react-native 不支持 localhost,127.0.0.1,请替换为自己的 IPv4 地址
+  endpoint: "ws://192.168.31.121:9090/websocket", // react-native 不支持 localhost,127.0.0.1,请替换为自己的 IPv4 地址
   SocketConstructor: WebSocket,
-  reconnectInterval: 10000,// 重连间隔
-  autoConnect: true,// 是否自动连接
-  autoReconnect: true,// 是否自动重连
+  reconnectInterval: 10000, // 重连间隔
+  autoConnect: true, // 是否自动连接
+  autoReconnect: true // 是否自动重连
 };
 const PUBLIC_EVENTS = [
   // 'ready',
   // 'nosub',
-  'added',
-  'changed',
-  'removed',
+  "added",
+  "changed",
+  "removed"
   // 'result',
   // 'updated',
   // 'error',
 ];
-export default (WrapperComponent, {collectionName, methodName}) => {
+export default (WrapperComponent, { collectionName, methodName }) => {
   class MeteorWrapper extends Component {
     ddp = new DDP(meteorOptions);
-    lockRequest = false
+    lockRequest = false;
     recordSubscriptions = {};
     state = {
       meteorList: [],
-      initOver: false,
+      initOver: false
     };
 
     componentDidMount() {
@@ -255,23 +252,23 @@ export default (WrapperComponent, {collectionName, methodName}) => {
     getDataResult() {
       // 防止初始化请求次数过多
       if (this.lockRequest) {
-        return
+        return;
       }
-      this.lockRequest = true
-      const {ddp} = this;
+      this.lockRequest = true;
+      const { ddp } = this;
       const self = this;
       /**
        * 调用后台定义的方法， 前端传递数组参数，meteor 后台接受到的是列表参数
        */
       ddp.method(methodName, [1, 10]);
-      ddp.on('result', data => {
-        const {result} = data;
+      ddp.on("result", data => {
+        const { result } = data;
         console.log(data);
         self.setState({
           meteorList: result,
-          initOver: true,
+          initOver: true
         });
-        self.lockRequest = false
+        self.lockRequest = false;
       });
     }
 
@@ -281,23 +278,23 @@ export default (WrapperComponent, {collectionName, methodName}) => {
 
     addSubscription() {
       if (!collectionName) {
-        console.error('mongodb collection 为空！');
+        console.error("mongodb collection 为空！");
         return;
       }
-      const {ddp} = this;
+      const { ddp } = this;
       const self = this;
       // 订阅数据
       self.recordSubscriptions[collectionName] = ddp.sub(collectionName);
       PUBLIC_EVENTS.forEach(event => {
         ddp.on(event, () => {
-          console.log(event)
+          console.log(event);
           self.getDataResult();
         });
       });
-      ddp.on('error', error => {
-        console.error(`服务器推送数据错误,错误消息：${error}`)
+      ddp.on("error", error => {
+        console.error(`服务器推送数据错误,错误消息：${error}`);
       });
-      ddp.on('ready', () => {
+      ddp.on("ready", () => {
         self.getDataResult();
       });
     }
@@ -313,19 +310,18 @@ export default (WrapperComponent, {collectionName, methodName}) => {
 
   return MeteorWrapper;
 };
-
 ```
 
 ### react 使用示例
 
 ```js
-import React, {Component} from 'react';
-import {List, Skeleton} from 'antd';
-import './App.css';
-import MeteorWrapper from './meteor'
+import React, { Component } from "react";
+import { List, Skeleton } from "antd";
+import "./App.css";
+import MeteorWrapper from "./meteor";
 
 function App(props) {
-  const {meteorList = [], initOver} = props
+  const { meteorList = [], initOver } = props;
   return (
     <div className="App">
       <List
@@ -334,12 +330,8 @@ function App(props) {
         renderItem={item => (
           <List.Item key={item.id}>
             <Skeleton loading={!initOver} active avatar>
-              <List.Item.Meta
-                title={item.name}
-                description={item.desc}
-              />
+              <List.Item.Meta title={item.name} description={item.desc} />
             </Skeleton>
-
           </List.Item>
         )}
       />
@@ -348,59 +340,63 @@ function App(props) {
 }
 
 export default MeteorWrapper(App, {
-  collectionName:'todo',
-  methodName:'getAllTodo'
-})
-
+  collectionName: "todo",
+  methodName: "getAllTodo"
+});
 ```
 
 ### react-native 使用示例
 
 ```js
-import React  from 'react';
-import {StyleSheet, Text, View, FlatList} from 'react-native';
-import MeteorWrapper from './meteor'
+import React from "react";
+import { StyleSheet, Text, View, FlatList } from "react-native";
+import MeteorWrapper from "./meteor";
 
 function App(props) {
-  const {meteorList = [], initOver} = props
+  const { meteorList = [], initOver } = props;
   return (
     <View style={styles.container}>
       <FlatList
         data={meteorList}
-        renderItem={({item}) => (
+        renderItem={({ item }) => (
           <View style={styles.item}>
-            <View style={styles.name}><Text>{item.name}</Text></View>
-            <View style={styles.desc}><Text>{item.desc}</Text></View>
-          </View>)}
+            <View style={styles.name}>
+              <Text>{item.name}</Text>
+            </View>
+            <View style={styles.desc}>
+              <Text>{item.desc}</Text>
+            </View>
+          </View>
+        )}
       />
     </View>
   );
 }
 
 export default MeteorWrapper(App, {
-  collectionName:'todo',
-  methodName:'getAllTodo'
-})
+  collectionName: "todo",
+  methodName: "getAllTodo"
+});
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     fontSize: 14,
-    lineHeight: 2,
+    lineHeight: 2
   },
   item: {
     padding: 10,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
     borderBottomWidth: 1,
-    borderStyle: 'solid',
+    borderStyle: "solid"
   },
   name: {
-    color: '#000',
+    color: "#000",
     fontWeight: "900",
     fontSize: 24
   },
   desc: {
-    color: '#666'
+    color: "#666"
   }
 });
 ```

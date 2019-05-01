@@ -9,13 +9,9 @@ categories: ["mac"]
 
 [awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 的中文翻译，翻译不妥的地方，欢迎提 issue 或者 pull request 。
 
+awesome-macos-command-line 收集了许多有用的终端命令。 翻译本教程，让我这个 Mac 小白大开眼界。
+
 [Github 地址](https://github.com/nusr/awesome-macos-command-line-zh)
-
-[在线地址](https://nusr.github.io/post/awesome-macos-command-line-zh/)
-
-awesome-macos-command-line 收集了许多终端命令。 
-
-翻译本教程，让我这个 Mac 小白大开眼界。
 
 <!--more-->
 
@@ -27,5 +23,6 @@ awesome-macos-command-line 收集了许多终端命令。
 - [函数](/post/awesome-macos-command-line-zh/functions)
 - [自启动服务](/post/awesome-macos-command-line-zh/launchagents)
 - [代码片段](/post/awesome-macos-command-line-zh/snippets)
+- [Mac 版本一览表](/post/awesome-macos-command-line-zh/glossary)
 
 > 文章首发 [https://nusr.github.io/](https://nusr.github.io/)

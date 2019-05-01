@@ -1,4 +1,3 @@
-
 ---
 title: "自启动服务"
 date: 2019-05-01T14:25:24+08:00
@@ -9,16 +8,15 @@ categories: ["mac"]
 ---
 
 > 各种有用的自启动服务例子。 [Awesome OS X Command Line](https://github.com/nusr/awesome-macos-command-line-zh) 的一部分
-``
+> ``
 
 <!--more-->
-
 
 ## 基本例子
 
 ### 定时工作模板
 
-每5分钟运行一次。
+每 5 分钟运行一次。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -95,6 +93,7 @@ categories: ["mac"]
 ### 定时更新 Homebrew
 
 为了使用通知系统，这个功能需要先安装[terminal-notifier](https://github.com/julienXX/terminal-notifier)。可以通过 `brew install terminal-notifier` 安装 terminal-notifier。
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

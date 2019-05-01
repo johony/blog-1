@@ -9,9 +9,7 @@ categories: ["mac"]
 
 > OS X 特定 Bash 风格的好用函数集合。[Awesome OS X Command Line](https://github.com/nusr/awesome-macos-command-line-zh) 的一部分。
 
-
 <!--more-->
-
 
 ## 开发者
 

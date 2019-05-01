@@ -7,8 +7,6 @@ tags: ["sublime"]
 categories: ["Mac"]
 ---
 
-
-
 下载最新的 sublime text 3207，无法安装 **Package Control**。
 
 根据[官方提示](https://packagecontrol.io/installation)，手动安装 **Package Control**。
@@ -55,7 +53,7 @@ Package Control: Unable to download https://packagecontrol.io/channel_v3.json af
 ```
 {
     "bootstrapped": true,
-    "http_proxy": "127.0.0.1:1087", 
+    "http_proxy": "127.0.0.1:1087",
     "installed_packages":
     [
         "Package Control"

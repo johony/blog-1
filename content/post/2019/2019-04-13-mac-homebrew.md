@@ -25,7 +25,7 @@ categories: ["Mac"]
 
 ## 安装 HomeBrew
 
-安装 **HomeBrew**，安装命令如下 
+安装 **HomeBrew**，安装命令如下
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
@@ -39,13 +39,7 @@ Homebrew/homebrew-cask (git revision 22128; last commit 2019-04-13)
 
 ## HomeBrew 常用命令：
 
-搜索包： `brew search [package-name]``
-查看包的信息： `brew info [package-name]`
-安装包：`brew install [package-name]`
-更新所有包：`brew update`
-更新某个包：`brew upgrade [package-name]`
-卸载某个包：`brew uninstall [package-name]`
-列出所有安装的包：`brew list `
+搜索包： ` brew search [package-name]`` 查看包的信息： `brew info [package-name]`安装包：`brew install [package-name]`更新所有包：`brew update`更新某个包：`brew upgrade [package-name]`卸载某个包：`brew uninstall [package-name]`列出所有安装的包：`brew list `
 
 ## 解决安装第三包缓慢
 
@@ -77,7 +71,7 @@ Homebrew/homebrew-cask (git revision 22128; last commit 2019-04-13)
 
 以下通过 **HomeBrew Cask** 安装 **QQ** 举例。
 
-### 搜索 QQ   
+### 搜索 QQ
 
 搜索 **QQ** ，使用 `brew search [app-nam]`,就会列出含有 **qq** 字段的软件。
 
@@ -105,7 +99,7 @@ QQ.app (App)
 
 ### 安装 QQ
 
-可以确认时腾讯出品，放心安装,使用 `brew cask install [app-name]` 安装 
+可以确认时腾讯出品，放心安装,使用 `brew cask install [app-name]` 安装
 
 `brew cask install qq`
 

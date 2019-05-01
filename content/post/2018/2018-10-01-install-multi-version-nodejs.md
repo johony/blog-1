@@ -6,12 +6,10 @@ tags: ["Node.js"]
 categories: ["技术"]
 ---
 
-
-
-
 Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine（Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境）。
+
 - Node.js 跨平台，支持 Windows、 Linux、Mac,
-- 2018.10.8 Node.js 最新版本 10.11.0 
+- 2018.10.8 Node.js 最新版本 10.11.0
 - Node.js 的包管理器 npm，是全球最大的开源库生态系统。
 
 ## 单个 Node.js 版本的安装
@@ -30,7 +28,7 @@ Node.js 的版本更新非常快，所有有时需要在多个版本之间切换
 Node.js 多个版本的安装，需要借助相应的工具。 MAC 和 Linux 用户，可以使用以下的安装工具。
 
 - [nvm](https://github.com/creationix/nvm)
-- [n](https://github.com/tj/n) 
+- [n](https://github.com/tj/n)
 
 我使用的是 windows,上面两种方式都不可以使用，可以使用 [nvm-windows](https://github.com/coreybutler/nvm-windows/releases),下载安装包，按照默认安装即可。
 
@@ -46,7 +44,7 @@ Node.js 多个版本的安装，需要借助相应的工具。 MAC 和 Linux 用
 
 ![](https://img2018.cnblogs.com/blog/1187660/201810/1187660-20181001104855297-1627992804.png)
 
- `LTS` 指最新稳定版本，`CURRENT` 指最新版本，一般安装 `LTS`
+`LTS` 指最新稳定版本，`CURRENT` 指最新版本，一般安装 `LTS`
 
 **安装指定版本的 Node.js**
 
@@ -61,7 +59,6 @@ Node.js 多个版本的安装，需要借助相应的工具。 MAC 和 Linux 用
 `nvm use 10.11.0`
 
 ![](https://img2018.cnblogs.com/blog/1187660/201810/1187660-20181001104913058-1588118055.png)
-
 
 **卸载某个 Node.js 版本**
 
@@ -81,26 +78,25 @@ npm 是 Node.js 自带的包管理器，但是默认下载依赖包的地址是�
 
 ### npm yarn 命令对照表
 
-
-|npm	                                |Yarn|
-|---------------------------------------|----|
-|npm install	                        |yarn install|
-|(N/A)	                                |yarn install --flat|
-|(N/A)	                                |yarn install --har|
-|(N/A)	                                |yarn install --no-lockfile|
-|(N/A)	                                |yarn install --pure-lockfile|
-|npm install [package]	                |(N/A)|
-|npm install --save [package]	        |yarn add [package]|
-|npm install --save-dev [package]	    |yarn add [package] [--dev/-D]|
-|(N/A)	                                |yarn add [package] [--peer/-P]|
-|npm install --save-optional [package]	|yarn add [package] [--optional/-O]|
-|npm install --save-exact [package]	    |yarn add [package] [--exact/-E]|
-|(N/A)	                                |yarn add [package] [--tilde/-T]|
-|npm install --global [package]	        |yarn global add [package]|
-|npm rebuild	                        |yarn install --force|
-|npm uninstall [package]	            |(N/A)|
-|npm uninstall --save [package]	        |yarn remove [package]|
-|npm uninstall --save-dev [package]	    |yarn remove [package]|
-|npm uninstall --save-optional [package]|yarn remove [package]|
-|npm cache clean	                    |yarn cache clean|
-|rm -rf node_modules && npm install	    |yarn upgrade|
+| npm                                     | Yarn                              |
+| --------------------------------------- | --------------------------------- |
+| npm install                             | yarn install                      |
+| (N/A)                                   | yarn install --flat               |
+| (N/A)                                   | yarn install --har                |
+| (N/A)                                   | yarn install --no-lockfile        |
+| (N/A)                                   | yarn install --pure-lockfile      |
+| npm install [package]                   | (N/A)                             |
+| npm install --save [package]            | yarn add [package]                |
+| npm install --save-dev [package]        | yarn add [package][--dev/-d]      |
+| (N/A)                                   | yarn add [package][--peer/-p]     |
+| npm install --save-optional [package]   | yarn add [package][--optional/-o] |
+| npm install --save-exact [package]      | yarn add [package][--exact/-e]    |
+| (N/A)                                   | yarn add [package][--tilde/-t]    |
+| npm install --global [package]          | yarn global add [package]         |
+| npm rebuild                             | yarn install --force              |
+| npm uninstall [package]                 | (N/A)                             |
+| npm uninstall --save [package]          | yarn remove [package]             |
+| npm uninstall --save-dev [package]      | yarn remove [package]             |
+| npm uninstall --save-optional [package] | yarn remove [package]             |
+| npm cache clean                         | yarn cache clean                  |
+| rm -rf node_modules && npm install      | yarn upgrade                      |

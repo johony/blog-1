@@ -3,11 +3,9 @@ title: "vue cli 3.x 项目部署到 github pages"
 date: 2019-04-16T21:20:39+08:00
 
 description: ""
-tags: ["vue","GitHub-pages"]
+tags: ["vue", "GitHub-pages"]
 categories: ["技术"]
 ---
-
-
 
 github pages 是 github 免费为用户提供的服务，写博客，或者部署一些纯静态项目。
 
@@ -17,7 +15,7 @@ github pages 是 github 免费为用户提供的服务，写博客，或者部�
 
 ## 1. vue-router 不要开启 history 模式
 
-路径中的 **#** 比较丑，就开启了 vue-router 的 history 模式，去掉了 **#**。平时做项目也是默认开启 history 模式。折腾了半天发现，我这是部署到  github pages ，服务器没有配置，导致页面一直请求不到。
+路径中的 **#** 比较丑，就开启了 vue-router 的 history 模式，去掉了 **#**。平时做项目也是默认开启 history 模式。折腾了半天发现，我这是部署到 github pages ，服务器没有配置，导致页面一直请求不到。
 
 ## 2. 配置 **publicUrl**
 
@@ -48,19 +46,19 @@ css 引入背景图片时，开发环境没有任何问题，但是一旦部署�
   </div>
 </template>
 <script>
-export default {
-  name: "App",
-  mounted() {
-    /**
-     * 解决 css 引入图片在 github pages 无法获取的问题
-     */
-    const { NODE_ENV } = process.env;
-    document.documentElement.className = NODE_ENV;
-  }
-};
+  export default {
+    name: "App",
+    mounted() {
+      /**
+       * 解决 css 引入图片在 github pages 无法获取的问题
+       */
+      const { NODE_ENV } = process.env;
+      document.documentElement.className = NODE_ENV;
+    }
+  };
 </script>
 <style lang="less">
-@import "~@/assets/global.less";
+  @import "~@/assets/global.less";
 </style>
 ```
 
@@ -75,7 +73,7 @@ export default {
 }
 
 .production {
-  background-image: url(/resume-vue/background.png)
+  background-image: url(/resume-vue/background.png);
 }
 ```
 
@@ -122,7 +120,6 @@ GitHub Pages 支持定制域名,支持 **jsonp** 请求。
 
 [代码地址](https://github.com/nusr/resume-vue)
 [预览地址](https://nusr.github.io/resume-vue/)
-
 
 ## 参考
 

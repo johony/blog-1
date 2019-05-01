@@ -7,11 +7,11 @@ tags: ["awesome"]
 categories: ["mac"]
 ---
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)[![Build Status](https://travis-ci.org/nusr/awesome-macos-command-line-zh.svg?branch=master)](https://travis-ci.org/nusr/awesome-macos-command-line-zh)
 
 [awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 的中文翻译，翻译不妥的地方，欢迎提 issue 或者 pull request 。
 
-翻译本教程，让我这个 Mac 小白熟悉了很多 Mac 终端命令。
+翻译本教程，让我这个 Mac 小白大开眼界。
 
 > 精心为 OS X 挑选的 shell 命令和工具。
 >
@@ -21,10 +21,7 @@ categories: ["mac"]
 
 中文 | [English](https://github.com/herrbischoff/awesome-macos-command-line)
 
-[Github 地址](https://github.com/nusr/awesome-macos-command-line-zh)
-
 <!--more-->
-
 
 ## 外形
 
@@ -68,7 +65,7 @@ mdfind kMDItemAppStoreHasReceipt=1
 
 #### 显示调试菜单
 
-Works up to Yosemite.
+Yosemite 版本起作用
 
 ```bash
 # 开启
@@ -141,7 +138,7 @@ defaults write com.apple.addressbook ABShowDebugMenu -bool false
 
 #### 键盘媒体健
 
-This works up to Yosemite. System Integrity Protection was introduced in El Capitan which prevents system Launch Agents from being unloaded.
+Yosemite 版本起作用。从 El Capitan 开始引入了系统完整性保护，可防止系统启动代理被卸载。
 
 ```bash
 # 停止响应按键
@@ -151,7 +148,7 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 launchctl load -w /System/Library/LaunchAgents/com.apple.rcd.plist
 ```
 
-From El Capitan onwards, you can either disable SIP or resort to a kind of hack, which will make iTunes inaccessible to any user, effectively preventing it from starting itself or its helpers. Be aware that for all intents and purposes this will trash your iTunes installation and may conflict with OS updates down the road.
+从 El Capitan 开始，您可以禁用 SIP 或者使用某种黑客手段，这将使任何用户都无法访问 iTunes，从而有效地阻止它自己和它的帮助者启动。 请注意，这将无法安装 iTunes ，并可能与操作系统的更新相冲突。
 
 ```bash
 sudo chmod 0000 /Applications/iTunes.app
@@ -311,7 +308,7 @@ sudo tmutil enablelocal
 sudo tmutil disablelocal
 ```
 
-Since High Sierra, you cannot disable local snapshots. Time Machine now always creates a local APFS snapshot and uses that snapshot as the data source to create a regular backup, rather than using the live disk as the source, as is the case with HFS formatted disks.
+从 High Sierra 开始，你无法禁用本地快照。 时间机器始终会创建本地 APFS 快照，并使用该快照作为创建常规备份的数据源，而不是使用活动磁盘作为数据源，就像 HFS 格式化磁盘一样。
 
 #### 防止时间机器提示将新的硬盘启动器作为本分卷
 
@@ -899,7 +896,7 @@ defaults write com.apple.finder ShowPathbar -bool false
 
 #### 滚动条可见性
 
-Possible values: `WhenScrolling`, `Automatic` and `Always`.
+可选的选项: `WhenScrolling` 、`Automatic` 和 `Always`。
 
 ```bash
 defaults write -g AppleShowScrollBars -string "Always"
@@ -2087,7 +2084,7 @@ mdls /path/to/file
 
 #### 禁止系统完整性保护
 
-Reboot while holding <kbd>Cmd</kbd> + <kbd>R</kbd>, open the Terminal application and enter:
+按住 <kbd>Cmd</kbd> + <kbd>R</kbd> 重启，打开终端输入以下命令：
 
 ```bash
 csrutil disable && reboot
@@ -2095,7 +2092,7 @@ csrutil disable && reboot
 
 #### 开启系统完整性保护
 
-Reboot while holding <kbd>Cmd</kbd> + <kbd>R</kbd>, open the Terminal application and enter:
+按住 <kbd>Cmd</kbd> + <kbd>R</kbd> 重启，打开终端输入以下命令：
 
 ```bash
 csrutil enable && reboot
@@ -2132,7 +2129,7 @@ sudo systemsetup setusingnetworktime off
 
 #### Ring Terminal Bell
 
-Rings the terminal bell (if enabled) and puts a badge on it.
+开启终端响铃，并在其上显示徽标数。
 
 ```bash
 tput bel
@@ -2140,8 +2137,8 @@ tput bel
 
 ### 替代终端
 
-- [iTerm2](https://iterm2.com) - A better Terminal.app.
-- [kitty](https://sw.kovidgoyal.net/kitty/) - Modern, GPU-accelerated terminal emulator.
+- [iTerm2](https://iterm2.com) - 更好的终端应用
+- [kitty](https://sw.kovidgoyal.net/kitty/) - 现代化以及 GPU 加速的终端应用。
 
 ### Shells
 
@@ -2225,4 +2222,3 @@ chsh -s $(brew --prefix)/bin/zsh
 | macOS 10.12                | Sierra             | September 20, 2016 | 10.12.6 (16G29) (July 19, 2017)       |
 | macOS 10.13                | High Sierra        | September 25, 2017 | 10.13.6 (17G65) (July 9, 2018)        |
 | macOS 10.14                | Mojave             | September 24, 2018 | 10.14 (18A391) (September 24, 2018)   |
-
