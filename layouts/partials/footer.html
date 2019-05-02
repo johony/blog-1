@@ -2,7 +2,7 @@
     {{- range $name, $path := .Site.Params.social }}
     {{- if $path }}
     {{- $realName := slicestr $name 2 }}
-    <a href="{{ $path | safeURL }}" class="iconfont icon-{{ $realName }}" title="{{ $realName }}" rel="noopener" target="_blank"> </a>
+    <a href="{{ $path | safeURL }}" class="iconfont icon-{{ $realName }}" title="{{ $realName }}" rel="noopener" target="_blank" data-title="{{ $realName }}"> </a>
     {{- end }}
 
 
