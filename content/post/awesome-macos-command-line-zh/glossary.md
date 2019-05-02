@@ -29,4 +29,3 @@ categories: ["Mac"]
 | macOS 10.13                | High Sierra        | September 25, 2017 | 10.13.6 (17G65) (July 9, 2018)        |
 | macOS 10.14                | Mojave             | September 24, 2018 | 10.14 (18A391) (September 24, 2018)   |
 
-> 文章首发 [https://nusr.github.io/](https://nusr.github.io/)

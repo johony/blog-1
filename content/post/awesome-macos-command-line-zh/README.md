@@ -114,7 +114,7 @@ rm -r ~/Library/Application\ Support/Remote\ Desktop/ ; \
 rm -r ~/Library/Containers/com.apple.RemoteDesktop
 ```
 
-### 交流
+### 通讯录
 
 #### 调试模式
 
