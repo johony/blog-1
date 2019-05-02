@@ -11,17 +11,17 @@ categories: ["Mac"]
 
 [awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 的中文翻译，翻译不妥的地方，欢迎提 issue 或者 pull request 。
 
-翻译本教程，让我这个 Mac 小白大开眼界。
+翻译本教程，见识了许多没用过的终端命令，加深了对 Mac 的认识。
+
 
 > 精心为 OS X 挑选的 shell 命令和工具。
 >
-> _“You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)_
+> _“你无需知晓一切。仅仅在你需要的时候，找到它就行了。” (John Brunner)_
 
 更多好用的终端工具，请参阅原作者的姐妹项目 [Awesome Command Line Apps](https://github.com/herrbischoff/awesome-command-line-apps)。
 
 中文 | [English](https://github.com/herrbischoff/awesome-macos-command-line)
 
-<!--more-->
 
 ## 外形
 
@@ -42,10 +42,10 @@ defaults write com.apple.universalaccess reduceTransparency -bool false
 #### 设置桌面背景
 
 ```bash
-# Up to Mountain Lion
+# Mountain Lion 及之前的版本支持
 osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/path/to/picture.jpg"'
 
-# Since Mavericks
+# 从 Mavericks 开始支持
 sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '/path/to/picture.jpg'" && killall Dock
 ```
 
@@ -158,6 +158,8 @@ sudo chmod 0000 /Applications/iTunes.app
 
 #### 将附件显示为图标
 
+Mac 10.14.4 测试，纯文本或其他文件会显示为图标，但是图片会直接插入。图片可以右键转换为图标，或者更换邮箱客户端解决。[issue 1](https://github.com/nusr/awesome-macos-command-line-zh/issues/1)
+
 ```bash
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 ```
@@ -168,12 +170,9 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 
 ```applescript
 (*
-Speed up Mail.app by vacuuming the Envelope Index
-Code from: http://web.archive.org/web/20071008123746/http://www.hawkwings.net/2007/03/03/scripts-to-automate-the-mailapp-envelope-speed-trick/
-Originally by "pmbuko" with modifications by Romulo
-Updated by Brett Terpstra 2012
-Updated by Mathias Törnblom 2015 to support V3 in El Capitan and still keep backwards compatibility
-Updated by Andrei Miclaus 2017 to support V4 in Sierra
+加快邮件索引。
+代码来源: http://web.archive.org/web/20071008123746/http://www.hawkwings.net/2007/03/03/scripts-to-automate-the-mailapp-envelope-speed-trick/
+最初由 pmbuko 改编，Romulo 修改。Brett Terpstra 在 2012 年更新，Mathias Törnblom 在 2013 更新到 V3 支持 El Capitan。Andrei Miclaus 在 2017 年更新到 V4,支持 Sierra。
 *)
 
 tell application "Mail" to quit
@@ -267,7 +266,7 @@ defaults write com.apple.Terminal FocusFollowsMouse -string NO
 
 ### 文本编辑
 
-#### 将文本编辑设置为纯文本的默认打开方式 Use Plain Text Mode as Default
+#### 将文本编辑设置为纯文本的默认打开方式
 
 ```bash
 defaults write com.apple.TextEdit RichText -int 0
@@ -362,7 +361,7 @@ sudo defaults write /Library/Preferences/com.apple.TimeMachine RequiresACPower -
 sudo tmutil verifychecksums /path/to/backup
 ```
 
-## 开发这
+## 开发者
 
 ### Vim
 
@@ -607,7 +606,7 @@ sudo fs_usage
 
 ### APFS
 
-从 High Sierra 开启，没有中央程序，并且使用不一致，因为大多数功能都被卷入到`tmutil`。
+从 High Sierra 开启，没有中央程序，并且使用不一致，因为大多数功能都被卷入到 `tmutil`。
 
 #### 将卷从 HFS+ 转换为 APFS
 
@@ -1029,7 +1028,7 @@ cp -v /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SFMono-* ~/L
 
 ## 函数
 
-请看 [这个文件](functions.md).
+请看 [这个文件](/post/awesome-macos-command-line-zh/functions).
 
 ## 硬件
 
@@ -1488,7 +1487,7 @@ defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.prefere
 
 #### 显示 Wi-Fi 网络密码
 
-Exchange SSID with the SSID of the access point you wish to query the password from.
+如果你希望使用 SSID 查询密码。
 
 ```bash
 security find-generic-password -D "AirPort network password" -a "SSID" -gw
@@ -1504,7 +1503,7 @@ networksetup -setairportpower en0 on
 
 - [Fink](http://www.finkproject.org) - Unix 开源软件的全部 Darwin 世界，有点过时。
 - [Homebrew](https://brew.sh) - OS X 缺少的包管理器，最流行的选择，我使用这个工具。
-- [MacPorts](https://www.macports.org) - 基于 X11 、Aqua 的开源软件，编译、安装和升级命令行。 非常干净的工具，原作者使用它。
+- [MacPorts](https://www.macports.org) - 基于 X11 、Aqua 的开源软件，编译、安装和升级软件包命令行工具。 非常干净的工具，原作者使用它。
 
 ## 打印
 
@@ -1862,7 +1861,7 @@ sudo kextunload -b com.apple.driver.ExampleBundle
 
 ### 自启动服务
 
-请看 [自启动服务](launchagents.md).
+请看 [自启动服务](/post/awesome-macos-command-line-zh/launchagents).
 
 ### 自启动服务
 
@@ -2127,7 +2126,7 @@ sudo systemsetup setusingnetworktime off
 
 ## 终端
 
-#### Ring Terminal Bell
+#### 终端响铃
 
 开启终端响铃，并在其上显示徽标数。
 
