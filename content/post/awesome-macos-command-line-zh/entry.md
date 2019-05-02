@@ -7,11 +7,17 @@ tags: ["Awesome"]
 categories: ["Mac"]
 ---
 
-[awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 的中文翻译，翻译不妥的地方，欢迎提 issue 或者 pull request 。
+[awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line) 收集了很多有趣的 Mac 终端命令。
 
-翻译本教程，见识了许多没用过的终端命令，加深了对 Mac 的认识。
+看了一遍后，发现帮助很大。
+
+见识许多没有使用过的命令，加深了对 Mac 的认识。
+
+所以翻译成了中文，共享给其他需要使用的人。
 
 [Github 地址](https://github.com/nusr/awesome-macos-command-line-zh)
+
+翻译不妥的地方，欢迎提 issue 或者 pull request 。
 
 <!--more-->
 
