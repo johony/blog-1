@@ -16,7 +16,7 @@ pygmentsCodefencesGuessSyntax = true
 markup = "markdown" # 格式化 markdown
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
-disqusShortname = "steve-xus-blog"      # disqus_shortname
+disqusShortname = ""      # disqus_shortname
 googleAnalytics = "UA-138883536-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
@@ -149,6 +149,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
+
+  [params.utteranc]           # utteranc https://github.com/utterance
+    repo = "nusr/blog"               # 安装 https://github.com/apps/utterances app ,配置选择的 github 仓库，，连个仓库名字要一致
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
