@@ -32,27 +32,27 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
+  name = "首页"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Archives"
+  name = "归档"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "Categories"
+  name = "分类"
   weight = 30
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "Tags"
+  name = "标签"
   weight = 40
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "About"
+  name = "关于我"
   weight = 50
   identifier = "about"
   url = "/about/"
@@ -150,8 +150,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-  [params.utteranc]           # utteranc https://github.com/utterance
-    repo = "nusr/blog"               # 安装 https://github.com/apps/utterances app ,配置选择的 github 仓库，，连个仓库名字要一致
+  [params.utterances]           # https://github.com/utterance/utterances 评论插件
+    repo = "nusr/blog"               # 安装 https://github.com/apps/utterances  ,配置选择的 github 仓库，，仓库名字要一致
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
