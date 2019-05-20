@@ -21,7 +21,7 @@
         {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
       </span>
       <span class="archive-post-title">
-        <a href="{{ .URL }}" class="archive-post-link">
+        <a href="{{ .RelPermalink }}" class="archive-post-link">
           {{ .Title }}
         </a>
       </span>
@@ -31,13 +31,13 @@
 <!-- pagination -->
 <nav class="pagination">
   {{ with $paginator.Prev -}}
-    <a class="prev" href="{{ .URL }}">
+    <a class="prev" href="{{ $paginator.Prev.URL }}">
       <i class="iconfont icon-left"></i>
       <span class="prev-text">{{ T "prevPage" }}</span>
     </a>
   {{- end }}
   {{ with $paginator.Next -}}
-    <a class="next" href="{{ .URL }}">
+    <a class="next" href="{{ $paginator.Next.URL }}">
       <span class="next-text">{{ T "nextPage" }}</span>
       <i class="iconfont icon-right"></i>
     </a>
