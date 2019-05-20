@@ -25,6 +25,9 @@ categories: ["技术"]
 - **最小 API** _只需 5 分钟学习。_
 - **TypeScript 编写** _推断代码更容易，易于编写 React 代码。_
 
+<!--more-->
+
+
 但是，最重要的问题是：这比 Redux 更好吗？ 答案可能是。
 
 - **它更小。** _比 Redux 小 40 倍。_
@@ -37,7 +40,6 @@ categories: ["技术"]
 
 你自己看着办吧！
 
-<!--more-->
 
 ### [查看 Unstated 迁移手册 &rarr;](#%E4%BB%8E-unstated-%E8%BF%81%E7%A7%BB)
 

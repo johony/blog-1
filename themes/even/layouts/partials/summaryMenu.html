@@ -1,0 +1,45 @@
+<div class="summary-menu">
+
+    <div class="terms-wrapper summary-menu-recent">
+        <h1 class="terms-title">最新文章</h1>
+        <ol class="recent-list">
+            {{ range first 5 (where .Site.RegularPages "Section" "post").ByPublishDate.Reverse }}
+            <li>
+                <a class="terms-link" href="{{ .Permalink | absURL }}">
+                    {{ .Title }}
+                </a>
+            </li>
+            {{ end }}
+        </ol>
+    </div>
+
+    <div class="terms-wrapper summary-menu-tags">
+        <h1 class="terms-title">标签</h1>
+        <ul class="terms-list">
+            {{ range $name, $value := .Site.Taxonomies.tags }}
+            <li class="terms-item">
+                <a class="terms-link" href="{{ " tags" | absURL }}/{{ $name | urlize }}">
+                {{ $name }}
+                <span class="terms-count">{{ len $value.Pages }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class="terms-wrapper summary-menu-categories">
+        <h1 class="terms-title">分类</h1>
+        <ul class="terms-list">
+            {{ range $name, $value := .Site.Taxonomies.categories }}
+            <li class="terms-item">
+                <a class="terms-link" href="{{ " categories" | absURL }}/{{ $name | urlize }}">
+                {{ $name }}
+                <span class="terms-count">{{ len $value.Pages }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+
+</div>
