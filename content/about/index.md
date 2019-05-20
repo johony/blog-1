@@ -10,6 +10,7 @@ categories: ["生活"]
 
 ## 相关链接
 
+1. [我的阅读清单](https://github.com/nusr/reading-list)
 1. [阮一峰](http://www.ruanyifeng.com/blog/)
 1. [MDN](https://developer.mozilla.org)
 
