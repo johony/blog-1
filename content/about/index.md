@@ -6,6 +6,8 @@ tags: []
 categories: ["生活"]
 ---
 
+目前正在找工作，现居武汉，期望城市杭州或者深圳,[我的简历](https://nusr.github.io/前端开发_徐琦_2年.pdf)
+
 热爱开源的前端工程师，Kindle 及 RSS 重度用户。
 
 ## 相关链接
