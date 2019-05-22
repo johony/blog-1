@@ -15,6 +15,7 @@
     .menu-item {
       display: inline-block;
 
+
       & + .menu-item {
         margin-left: $menu-item-margin-left;;
       }
@@ -31,5 +32,13 @@
 @include max-screen() {
   .site-navbar {
     display: none;
+  }
+}
+
+@include min-screen($toc-max-sreen-width) {
+  .site-navbar .menu-item {
+    &.menu-item-tags, &.menu-item-categories {
+      display: none;
+    }
   }
 }
