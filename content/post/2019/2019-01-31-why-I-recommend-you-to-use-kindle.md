@@ -6,9 +6,7 @@ tags: ["Kindle"]
 categories: ["阅读"]
 ---
 
-kindle 分 kindle 电子阅读器，pc 版，app 版，下文主要介绍 Amazon 设计和销售的电子书阅读器。
-
-## 使用 kindle 有哪些优点
+使用 kindle 电子书的优点如下
 
 1. 搬家不用搬纸书
 2. 随时可以切换书本看
@@ -38,8 +36,8 @@ kpw4 的存储空间更大，我买的 kpw3 ,只有 4G 的存储空间，每次�
 
 亚马逊和天猫的评论中，发现 **Kindle Oasis** 的续航能力只有一两天。
 
-![kindle](https://img2018.cnblogs.com/blog/1187660/201901/1187660-20190131124844996-734654050.png)
-[图片来源](https://www.amazon.cn/dp/B07746N2J9/ref=sr_1_1?ie=UTF8&qid=1548909524&sr=8-1&keywords=kindle)
+![kindle](/images/2019/kindleCategory.png)
+*图片来源:[https://www.amazon.cn/dp/B07746N2J9/ref=sr_1_1?ie=UTF8&qid=1548909524&sr=8-1&keywords=kindle](https://www.amazon.cn/dp/B07746N2J9/ref=sr_1_1?ie=UTF8&qid=1548909524&sr=8-1&keywords=kindle)*
 
 ## 如何寻找自己想看的书
 
@@ -59,7 +57,7 @@ kpw4 的存储空间更大，我买的 kpw3 ,只有 4G 的存储空间，每次�
 
 可以使用 [古登堡](https://www.gutenberg.org/),不用注册，就可以免费下载的英文书籍。
 
-(http://libgen.io/)[http://libgen.io/]，不用注册就可以下载大量的英文书籍，包括英文漫画。
+[http://libgen.io/](http://libgen.io/)，不用注册就可以下载大量的英文书籍，包括英文漫画。
 
 常常得到的链接是百度云分享，[破解某度下载限速工具地址](https://github.com/high-speed-downloader/high-speed-downloader)。
 
@@ -111,7 +109,7 @@ Adobe PDF (.pdf)文档可转换为Kindle格式发送，目前处于试用阶段�
 使用推送功能要有亚马逊账号，进入 [amazon](www.amazon.cn) 官网，依次点击 **我的账户 -> 内容和设备 -> 设置 -> 个人文档设置**。
 在**已认可的发件人电子邮箱列表**中，添加自己的 QQ 邮箱，然后在 QQ 邮箱添加附件，发送到**8618062549637@kindle.cn**，每个账户的地址都不一样，根据自己的账户显示填写。然后 kindle 里面就会显示自己推送的书籍。如果想转换 pdf 为 kindle 格式，邮件主题可以填写成 **convert**,否则为空就行。
 
-![个人文档设置](https://img2018.cnblogs.com/blog/1187660/201901/1187660-20190131134914015-2078845418.png)
+![个人文档设置](/images/2019/kindleEmail.png)
 
 ## 如何使用 kindle 阅读英文书籍
 
@@ -127,22 +125,10 @@ kindle 也有生词本，查过的单词可以自动加入生词本。如果你�
 ## kindle 常用的辅助软件
 
 - Gitbook 可以将多个 markdown 文件转换为 mobi
-- kindle mate - 导出 kindle 中的标注和笔记
+- kindle mate - 导出 kindle 中的标注和笔记，只支持 Windows
 - Calibre – 一站式电子书解决方案,可以将 kindle 不支持的格式(例如 epub) 转换为 mobi
-- Sigil – 全能 epub 格式电子书编辑器
-- Clippings – 强大的剪贴管理工具
 - Kindle Previewer – 亚马逊官方电子书模拟器
-- Kindle Textbook Creator – Amazon 官方电子书制作工具
-- sdr-Cleaner – 无用 sdr 文件夹清理工具
-- KindleGen – 亚马逊官方电子书转换工具
-- Clippings Fere – 把 **我的剪贴** (kindle 的笔记和标注都存在这个文件中，对应的文件是 **clippings.txt**)格式化为 HTML 文件
-- K2pdfopt – 强大的桌面用 PDF 重排工具
-- EasyPub – TXT 文档转 epub,mobi 工具
-- Kindle Comic Converter – 最简单的漫画转换工具
 - Kindle Comic Creator – 亚马逊官方漫画转换工具
-- Kindle Kids’ Book Creator – 亚马逊官方儿童图书工具
-- Kindle Plugin for Adobe InDesign – 亚马逊官方插件
-- KindleUnpack – 拆解 kindle 电子书文件的利器
 
 ## 参考
 
