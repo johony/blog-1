@@ -14,7 +14,7 @@ hugo -t even # if using a theme, replace with `hugo -t <YOURTHEME>`
 cd public
 
 # 添加 readme
-echo '# Store Hugo HTML files\n\nBlog Markdown File [https://github.com/nusr/blog](https://github.com/nusr/blog)' > README.md
+echo '## Store Hugo HTML files <br> Blog Markdown File [https://github.com/nusr/blog](https://github.com/nusr/blog)' > README.md
 # Add changes to git.
 git init
 git add -A
