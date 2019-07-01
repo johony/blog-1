@@ -1,10 +1,12 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "[Visit My Blog](https://nusr.github.io/)",
+  "description": "my blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "bash deploy.sh",
+    "start": "hugo server",
+    "build": "hugo -t even"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "bash deploy.sh"
+      "pre-push": "npm run deploy"
     }
   }
 }
