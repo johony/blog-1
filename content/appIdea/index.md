@@ -7,12 +7,7 @@ tags: []
 categories: []
 ---
 
-
-1. Kindle 剪贴导出桌面应用 或者 Web 应用 <input type="file"/>
-
-2. 一篇文章自动发布到多个平台 puppeteer
-
-
+1. 一篇文章自动发布到多个平台 puppeteer
 
 <!--more-->
 

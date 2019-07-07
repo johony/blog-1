@@ -6,9 +6,4 @@ tags: []
 categories: ["生活"]
 ---
 
-热爱开源的前端工程师，[Kindle](2019-01-31-why-I-recommend-you-to-use-kindle.md) 及 [RSS](/post/2019/2019-05-29-use-rss) 重度用户。
-
-## 相关链接
-
-1. [我的阅读清单](https://github.com/nusr/reading-list)
-
+热爱开源的前端工程师，[Kindle](/post/2019/2019-01-31-why-I-recommend-you-to-use-kindle) 及 [RSS](/post/2019/2019-05-29-use-rss) 重度用户。

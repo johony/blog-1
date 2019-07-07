@@ -1,5 +1,5 @@
 ---
-title: "你再也不用使用 Redux、Mobx、Flux 等状态管理了"
+title: "React 状态管理终结篇"
 date: 2019-05-08T20:09:06+08:00
 description: ""
 tags: ["React","State Management"]
