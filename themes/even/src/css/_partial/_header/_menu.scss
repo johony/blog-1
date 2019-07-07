@@ -34,11 +34,3 @@
     display: none;
   }
 }
-
-@include min-screen($toc-max-sreen-width) {
-  .site-navbar .menu-item {
-    &.menu-item-tags, &.menu-item-categories {
-      display: none;
-    }
-  }
-}
