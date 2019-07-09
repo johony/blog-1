@@ -7,6 +7,12 @@
   padding: 40px $header-padding;
   @import '_header/logo';
   @import '_header/menu';
+  position: relative;
+
+  .search-form {
+    right: 45px;
+    bottom: 0;
+  }
 }
 
 

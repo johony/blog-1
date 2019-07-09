@@ -12,7 +12,7 @@ const extractSass = new MiniCssExtractPlugin({
 const cleanBuild = new CleanWebpackPlugin([
   'static/dist/*'
 ]);
-
+const sourceMap = false
 const assetsManifest = new AssetsWebpackPlugin({
   filename: 'assets.json',
   path: path.join(__dirname, 'data/even'),
@@ -49,11 +49,11 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader', options: { minimize: true, sourceMap: true }
+            loader: 'css-loader', options: { minimize: true, sourceMap: sourceMap }
           }, {
-            loader: 'postcss-loader', options: { sourceMap: true }
+            loader: 'postcss-loader', options: { sourceMap: sourceMap }
           }, {
-            loader: 'sass-loader', options: { sourceMap: true }
+            loader: 'sass-loader', options: { sourceMap: sourceMap }
           }
         ]
       },
@@ -72,7 +72,7 @@ module.exports = {
     minimizer: [
       new UglifyJsPlugin({
         parallel: true,
-        sourceMap: true,
+        sourceMap: sourceMap,
       }),
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {

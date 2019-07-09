@@ -19,6 +19,8 @@
     {{ if not .Params.hideHeaderAndFooter -}}
     <header id="header" class="header">
         {{ partial "header.html" . }}
+        {{ partial "search.html" . }}
+
     </header>
     {{- end }}
 

@@ -27,10 +27,13 @@
       font-size: $menu-link-font-size;
     }
   }
+
+
 }
 
+
 @include max-screen() {
-  .site-navbar {
+  .site-navbar, .search-form {
     display: none;
   }
 }
