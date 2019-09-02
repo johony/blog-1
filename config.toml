@@ -1,4 +1,4 @@
-baseURL = "//johony.github.io/blog-1/"
+baseURL = "//johony.github.io/blog2/"
 relativeURLs = true
 canonifyURLs  = true
 languageCode = "zh-CN"
