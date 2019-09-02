@@ -33,32 +33,32 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   name = "首页"
   weight = 10
   identifier = "home"
-  url = "/"
+  url = "/blog-1/"
 [[menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  url = "/blog-1/post/"
 [[menu.main]]
   name = "分类"
   weight = 30
   identifier = "categories"
-  url = "/categories/"
+  url = "/blog-1/categories/"
 [[menu.main]]
   name = "标签"
   weight = 40
   identifier = "tags"
-  url = "/tags/"
+  url = "/blog-1/tags/"
 [[menu.main]]
   name = "关于我"
   weight = 50
   identifier = "about"
-  url = "/about/"
+  url = "/blog-1/about/"
 [[menu.main]]
   name = "阅读清单"
   weight = 60
   identifier = "reading-list"
-  url = "https://github.com/nusr/reading-list/"
+  url = "https://github.com/johony/blog-1/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
