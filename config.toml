@@ -1,4 +1,5 @@
 baseURL = "https://johony.github.io/blog-1/"
+canonifyurls  = true
 languageCode = "zh-CN"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Brave New World"
@@ -33,27 +34,27 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   name = "首页"
   weight = 10
   identifier = "home"
-  url = "/blog-1/"
+  url = ""
 [[menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
-  url = "/blog-1/post/"
+  url = "post/"
 [[menu.main]]
   name = "分类"
   weight = 30
   identifier = "categories"
-  url = "/blog-1/categories/"
+  url = "categories/"
 [[menu.main]]
   name = "标签"
   weight = 40
   identifier = "tags"
-  url = "/blog-1/tags/"
+  url = "tags/"
 [[menu.main]]
   name = "关于我"
   weight = 50
   identifier = "about"
-  url = "/blog-1/about/"
+  url = "about/"
 [[menu.main]]
   name = "阅读清单"
   weight = 60
