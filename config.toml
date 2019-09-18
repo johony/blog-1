@@ -1,4 +1,4 @@
-baseURL = "https://johony.github.io/blog2/"
+baseURL = "https://hugo.easyli.net"
 # relativeURLs = true # 菜单会乱，故去掉
 canonifyURLs  = true
 languageCode = "zh-CN"
